@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iTunes Song Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Playlist Area -->
+        <div id="playlistArea">
+            <h2>Playlist</h2>
+            <table id="playlistTable">
+                <thead>
+                    <tr>
+                        <th>Controls</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Artwork</th>
+                    </tr>
+                </thead>
+                <tbody id="playlist"></tbody>
+            </table>
+        </div>
+        
+        <!-- Input Area -->
+        <div class="wrapper">
+            <label for="songTitle">Enter Song Title:</label>
+            <input type="text" id="songTitle" />
+            <button id="submit_button">Search</button>
+        </div>
+
+        <!-- Search Results Area -->
+        <div id="songResults">
+            <h2>Songs matching: <span id="searchQuery"></span></h2>
+            <table id="searchResultsTable">
+                <thead>
+                    <tr>
+                        <th>Add</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Artwork</th>
+                    </tr>
+                </thead>
+                <tbody id="searchResults"></tbody>
+            </table>
+        </div>
+        
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
